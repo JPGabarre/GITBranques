@@ -4,16 +4,18 @@
     </head>
     <body>
         <script>
-            var array = new array(50);
+            var array = new array(700000);
             for(var i = 0; i < array.lenght; i++){
-                array[i]= parseInt(Math.random()* 500000);
+                array[i]= parseInt(Math.random()* 700000);
             }
 
             var nUser = prompt('Introdueix el numero a buscar: ');
 
             for(var i = 0; i < array.lenght; i++){
-                if(nUser==array[i])alert("S'ha trobat el numero que coincideix ...");
-            }
+		if (array[i]%2==0){
+		if(nUser==array[i])alert("S'ha trobat el numero que coincideix ...");
+            	}
+	}
 
         </script>
         </body>
